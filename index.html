@@ -4,20 +4,29 @@
 <TITLE> Why am I moist? </TITLE>
 </HEAD>
 <BODY>
-	<div id="reason">
+	<div id="theReason">
 	</div>
 	<script type="text/javascript">
+
     var reasons = [
-    	'foo',
-    	'bar',
-    	'baz'
+    	'You were hiking in the rain.',
+    	'You just went swimming.',
+    	'You slept on a foam mattress and overheated.',
+    	'You\'re in a rain forest.',
+    	'...I think you know.',
+    	'Sprinkler system malfunction.',
+    	'Dense fog.',
+    	'Submarine escape!',
+	'Sailing mishap'
     ]
     
     function getReason() {
     	var randomNumber = Math.floor(Math.random() * (reasons.length));
-    	document.getElementById('reason').innerHTML = reasons[randomNumber];
+    	document.getElementById('theReason').innerHTML = reasons[randomNumber];
     }
+
     document.addEventListener('DOMContentLoaded', getReason(), false);
+
 </script>
 </BODY>
 </HTML>
