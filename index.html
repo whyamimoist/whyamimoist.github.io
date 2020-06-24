@@ -6,6 +6,20 @@
 <BODY>
 	<div id="reason">
 	</div>
-	<script src="why.js"></script>
+	<script type="text/javascript">
+    var reasons - [
+    	'foo',
+    	'bar',
+    	'baz'
+    ]
+    
+    function getReason() {
+    	var randomNumber = Math.floor(Math.random() * (reasons.length));
+    	document.getElementById('reason').innerHTML = reasons[randomNumber];
+    }
+    document.addEventListener('DOMContentLoaded', getReason() {
+      alert("Ready!");
+    }, false);
+</script>
 </BODY>
 </HTML>
